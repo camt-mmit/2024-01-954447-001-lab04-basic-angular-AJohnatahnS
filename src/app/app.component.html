@@ -1,11 +1,10 @@
-<h1>Hello World :: {{ title }}</h1>
-<nav>
-  <a routerLink="./hello-world" routerLinkActive="st-active">Hello-World</a>
-  <br />
-  <a routerLink="./profile" routerLinkActive="st-active">Profile</a>
-  <br />
-  <a routerLink="./friend" routerLinkActive="st-active">Friend</a>
-  <br />
-  <a routerLink="./status" routerLinkActive="st-active">Status</a>
-</nav>
-<router-outlet />
+<div class="container">
+  <h1>Hello World :: {{ title }}</h1>
+  <nav>
+    <a routerLink="./hello-world" routerLinkActive="st-active">Hello-World</a>
+    <a routerLink="./profile" routerLinkActive="st-active">Profile</a>
+    <a routerLink="./friend" routerLinkActive="st-active">Friend</a>
+    <a routerLink="./status" routerLinkActive="st-active">Status</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

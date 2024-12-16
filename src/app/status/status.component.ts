@@ -5,8 +5,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [],
   templateUrl: './status.component.html',
   styleUrl: './status.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StatusComponent {
-
+  currentTime = new Date().toString();
+  userAgent = navigator.userAgent;
+  languages = navigator.languages;
+  isCookieEnabled = navigator.cookieEnabled;
+  logicalProcessors = navigator.hardwareConcurrency || 0;
+  maxTouchPoints = navigator.maxTouchPoints || 0;
 }

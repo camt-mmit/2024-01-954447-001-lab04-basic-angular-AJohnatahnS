@@ -1,0 +1,36 @@
+$primary-color: blue;
+$hover-background: lightgray;
+$active-background: #d3d3d3; // Slightly darker for active state
+$border-radius: 5px;
+$padding: 5px 15px;
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    padding: $padding;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $hover-background;
+      color: $primary-color;
+    }
+
+    &.st-active {
+      background-color: $active-background;
+      color: $primary-color;
+      border-color: darken($primary-color, 10%);
+    }
+  }
+}

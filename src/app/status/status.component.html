@@ -1,1 +1,48 @@
-<p>status works!</p>
+<div class="status-container">
+  <h1>Status</h1>
+  <table>
+    <tr>
+      <td><strong>Current Time</strong></td>
+      <td>::</td>
+      <td>{{ currentTime }}</td>
+    </tr>
+    <tr>
+      <td><strong>User Agent</strong></td>
+      <td>::</td>
+      <td>{{ userAgent }}</td>
+    </tr>
+    <tr>
+      <td><strong>Languages</strong></td>
+      <td>::</td>
+      <td>{{ languages.join(", ") }}</td>
+    </tr>
+    <tr>
+      <td><strong>Is Cookie Enabled?</strong></td>
+      <td>::</td>
+      <td>{{ isCookieEnabled }}</td>
+    </tr>
+    <tr>
+      <td><strong>Logical Processors</strong></td>
+      <td>::</td>
+      <td>{{ logicalProcessors }}</td>
+    </tr>
+    <tr>
+      <td><strong>Max Touch Points</strong></td>
+      <td>::</td>
+      <td>{{ maxTouchPoints }}</td>
+    </tr>
+  </table>
+
+  <p>
+    This page displays the status of your web browser. The current date is
+    retrieved using the
+    <code>Date</code> class (e.g., <code>new Date()</code>). Other information
+    is fetched using <code>window.navigator</code>. More details can be found
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator"
+      target="_blank"
+    >
+      here </a
+    >.
+  </p>
+</div>
